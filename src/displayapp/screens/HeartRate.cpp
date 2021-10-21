@@ -87,7 +87,7 @@ void HeartRate::Refresh() {
       lv_label_set_text_fmt(label_hr, "%03d", heartRateController.HeartRate());
   }
 
-  lv_obj_set_style_local_text_color(label_bpm, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_RED)
+  lv_obj_set_style_local_text_color(label_bpm, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_RED);
   lv_label_set_text(label_status, ToString(state));
   lv_obj_align(label_status, label_hr, LV_ALIGN_OUT_BOTTOM_MID, 0, 10);
 }
